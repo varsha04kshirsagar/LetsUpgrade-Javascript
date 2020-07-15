@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+
+</head>
+
+<body>
+    <h2>JavaScript console.assert() Method
+    </h2>
+    <h2>JavaScript console.error() Method
+    </h2>
+    <h2>JavaScript console.info() Method
+    </h2>
+    <h2>JavaScript console.log() Method
+    </h2>
+    <h2>JavaScript console.group() Method
+    </h2>
+    <h2>JavaScript console.warn() Method
+    </h2>
+    <h2>JavaScript console.time() and console.timeEnd() Method
+    </h2>
+    <button onclick="myFunction()">Start Trace</button>
+
+    <script>
+        var myObj = {
+            firstname: "John",
+            lastname: "Doe"
+        };
+        console.time("Time Taken");
+        console.assert(document.getElementById("demo"), myObj);
+        console.error("You made a mistake");
+        console.info("Hello world!");
+        console.log("Hello Friends!");
+        console.group();
+        console.log("Hello again, this time inside a group!");
+        console.warn("This is a warning!");
+        console.timeEnd("Time Taken");
+
+        function myFunction() {
+            myOtherFunction();
+        }
+
+        function myOtherFunction() {
+            console.trace();
+        }
+    </script>
+</body>
+
+</html>

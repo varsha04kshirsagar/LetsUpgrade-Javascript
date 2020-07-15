@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+</head>
+
+<body>
+    <h2>Var</h2>
+    <p>
+        var variable use for a variable declaration.Scope of var variable is globally or function/locally.The scope is global when a var variable is declared outside a function anf it is available for use in whole window.
+    </p>
+    <h2>Let</h2>
+    <p>
+        let is now preferred for variable declaration. let is block scoped. A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+    </p>
+    <h2>
+        Const
+    </h2>
+    <p>
+        Variables declared with the const maintain constant values. const declarations can only be accessed within the block they were declared.
+    </p>
+</body>
+<script>
+    var greeter = "hey hi";
+
+    function newFunction() {
+        var hello = "hello";
+    }
+    console.log(hello); //hello is not defined
+    console.info(greeter);
+    let greeting = "say Hi";
+    if (true) {
+        let greeting = "say Hello instead";
+        console.log(greeting); // "say Hello instead"
+    }
+    console.log(greeting); // "say Hi"
+    const greetings = {
+        message: "say Hi",
+        times: 4
+    }
+    console.log(greetings);
+</script>
+
+</html>
